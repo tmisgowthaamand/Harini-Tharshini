@@ -40,7 +40,7 @@ const OrderSuccess = () => {
     shippingAddress: {
       name: `${customerInfo.firstName || ''} ${customerInfo.lastName || ''}`.trim() || 'Customer Name',
       address: `${customerInfo.address || ''}, ${customerInfo.city || ''}, ${customerInfo.state || ''} - ${customerInfo.pincode || ''}`,
-      phone: customerInfo.phone || '+91 98765 43210',
+      phone: customerInfo.phone || '+91 97893 42841',
       email: customerInfo.email || '',
     },
     paymentMethod: paymentMethod === 'upi' ? 'UPI Payment' : 
@@ -247,15 +247,26 @@ const OrderSuccess = () => {
                     Track Order
                   </Button>
                   
-                  <a 
-                    href="https://wa.me/+919876543210" 
-                    className="w-full"
-                  >
-                    <Button variant="outline" className="w-full">
-                      <Phone className="mr-2" size={16} />
-                      WhatsApp Support
-                    </Button>
-                  </a>
+                  <div className="space-y-2">
+                    <a 
+                      href="https://wa.me/+919789342841" 
+                      className="w-full block"
+                    >
+                      <Button variant="outline" className="w-full">
+                        <Phone className="mr-2" size={16} />
+                        WhatsApp: +91 97893 42841
+                      </Button>
+                    </a>
+                    <a 
+                      href="https://wa.me/+919790449439" 
+                      className="w-full block"
+                    >
+                      <Button variant="outline" className="w-full">
+                        <Phone className="mr-2" size={16} />
+                        WhatsApp: +91 97904 49439
+                      </Button>
+                    </a>
+                  </div>
                 </CardContent>
               </Card>
 

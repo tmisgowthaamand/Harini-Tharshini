@@ -61,7 +61,7 @@ const Navigation = ({ cartCount = 0 }: NavigationProps) => {
           {/* Right Actions */}
           <div className="flex items-center space-x-4">
             <a
-              href="https://wa.me/+919876543210"
+              href="https://wa.me/+919789342841"
               className="hidden sm:flex items-center space-x-2 bg-green/10 hover:bg-green/20 px-3 py-2 rounded-md transition-colors"
             >
               <Phone size={16} />
@@ -106,7 +106,7 @@ const Navigation = ({ cartCount = 0 }: NavigationProps) => {
                 </Link>
               ))}
               <a
-                href="https://wa.me/+919876543210"
+                href="https://wa.me/+919789342841"
                 className="flex items-center space-x-2 py-2 text-white hover:text-gold transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >

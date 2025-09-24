@@ -122,7 +122,7 @@ const Distributor = () => {
 
     <div class="contact-info">
         <div class="section-title" style="color: white; border-left-color: white;">Contact Information</div>
-        <p><strong>Phone:</strong> +91 98765 43210<br>
+        <p><strong>Phone:</strong> +91 97893 42841 / +91 97904 49439<br>
         <strong>Email:</strong> hariniandtharshinitraders@gmail.com<br>
         <strong>Location:</strong> NO.36, Swamy Sannathi Street, Madurai, Tamil Nadu - 625001</p>
         <p><strong>Business Hours:</strong> Mon-Sat: 9:00 AM - 6:00 PM</p>
@@ -238,7 +238,7 @@ const Distributor = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="bg-white text-primary hover:bg-white/90 font-semibold shadow-lg">
                   <Phone className="mr-2" size={18} />
-                  Call Now: +91 98765 43210
+                  Call Now: +91 97893 42841
                 </Button>
                 <Button 
                   variant="outline" 
@@ -522,9 +522,14 @@ const Distributor = () => {
                       <Phone size={20} className="text-primary" />
                       <div>
                         <p className="font-semibold">Call Us</p>
-                        <a href="tel:+919876543210" className="text-primary hover:underline">
-                          +91 98765 43210
-                        </a>
+                        <div>
+                          <a href="tel:+919789342841" className="text-primary hover:underline block">
+                            +91 97893 42841
+                          </a>
+                          <a href="tel:+919790449439" className="text-primary hover:underline block">
+                            +91 97904 49439
+                          </a>
+                        </div>
                       </div>
                     </div>
                     <div className="flex items-center space-x-3">

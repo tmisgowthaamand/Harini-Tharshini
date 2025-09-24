@@ -17,21 +17,21 @@ const Homepage = () => {
       name: 'Premium Coconut Oil',
       size: '1L',
       price: '₹285',
-      image: oilCollection,
+      image: '/images/coconut 1ltr.jpg',
     },
     {
       id: 2,
       name: 'Cold-Pressed Sesame Oil',
       size: '5L',
       price: '₹1,250',
-      image: oilCollection,
+      image: '/images/sesame oil 5l (1).png',
     },
     {
       id: 3,
       name: 'Pure Groundnut Oil',
       size: '1L',
       price: '₹320',
-      image: oilCollection,
+      image: '/images/Pure Groundnut 1l (1).png',
     },
   ];
 
@@ -148,7 +148,7 @@ const Homepage = () => {
               Our Premium Collection
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Carefully crafted oils that bring authentic flavors and nutritional benefits to your table.
+              Premium edible oils from Madurai's trusted woman-owned MSME enterprise. Pure oils for your family's health and prosperity.
             </p>
           </div>
           
@@ -159,7 +159,7 @@ const Homepage = () => {
                   <img 
                     src={product.image} 
                     alt={product.name}
-                    className="w-full h-full object-cover rounded-md"
+                    className="w-full h-full object-contain rounded-md"
                   />
                 </div>
                 <CardContent className="p-6 space-y-4">

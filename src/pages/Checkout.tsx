@@ -163,7 +163,7 @@ const Checkout = () => {
                           value={formData.phone}
                           onChange={(e) => handleInputChange('phone', e.target.value)}
                           className="form-input"
-                          placeholder="+91 98765 43210"
+                          placeholder="+91 97893 42841"
                         />
                       </div>
                     </div>

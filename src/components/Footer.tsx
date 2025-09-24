@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, Instagram, Facebook } from 'lucide-react';
+import { Phone, Mail, MapPin, Instagram, Facebook, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -66,15 +66,46 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone size={16} className="text-white/80" />
-                <a href="tel:+919876543210" className="text-white/90 hover:text-white transition-colors">
-                  +91 98765 43210
-                </a>
+                <div className="text-white/90">
+                  <a href="tel:+919789342841" className="hover:text-white transition-colors block">
+                    +91 97893 42841
+                  </a>
+                  <a href="tel:+919790449439" className="hover:text-white transition-colors block">
+                    +91 97904 49439
+                  </a>
+                </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail size={16} className="text-white/80" />
-                <a href="mailto:hariniandtharshinitraders@gmail.com" className="text-white/90 hover:text-white transition-colors">
-                  hariniandtharshinitraders@gmail.com
-                </a>
+                <div className="text-white/90">
+                  <a href="mailto:hariniandtharshinitraders@gmail.com" className="hover:text-white transition-colors block">
+                    hariniandtharshinitraders@gmail.com
+                  </a>
+                  <a href="mailto:contact@hariniandtharshini.store" className="hover:text-white transition-colors block">
+                    contact@hariniandtharshini.store
+                  </a>
+                </div>
+              </div>
+              
+              {/* WhatsApp Buttons */}
+              <div className="space-y-2">
+                <h4 className="font-semibold text-white text-sm mb-2">Quick WhatsApp</h4>
+                <div className="space-y-1">
+                  <a 
+                    href="https://wa.me/+919789342841" 
+                    className="flex items-center space-x-2 text-white/90 hover:text-white transition-colors text-sm bg-green/20 hover:bg-green/30 px-2 py-1 rounded"
+                  >
+                    <MessageCircle size={14} />
+                    <span>+91 97893 42841</span>
+                  </a>
+                  <a 
+                    href="https://wa.me/+919790449439" 
+                    className="flex items-center space-x-2 text-white/90 hover:text-white transition-colors text-sm bg-green/20 hover:bg-green/30 px-2 py-1 rounded"
+                  >
+                    <MessageCircle size={14} />
+                    <span>+91 97904 49439</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>

@@ -172,9 +172,14 @@ const CancellationRefundPolicy = () => {
                   </div>
                   <div className="flex items-center space-x-3">
                     <Phone size={20} className="text-primary flex-shrink-0" />
-                    <a href="tel:+919789342841" className="text-primary hover:underline">
-                      +91 97893 42841
-                    </a>
+                    <div>
+                      <a href="tel:+919789342841" className="text-primary hover:underline block">
+                        +91 97893 42841
+                      </a>
+                      <a href="tel:+919790449439" className="text-primary hover:underline block">
+                        +91 97904 49439
+                      </a>
+                    </div>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Mail size={20} className="text-primary flex-shrink-0" />

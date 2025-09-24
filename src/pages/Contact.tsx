@@ -43,14 +43,14 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Phone',
-      details: ['+91 98765 43210', '+91 87654 32109'],
-      action: 'tel:+919876543210',
+      details: ['+91 97893 42841', '+91 97904 49439'],
+      action: 'tel:+919789342841',
       actionText: 'Call Now'
     },
     {
       icon: Mail,
       title: 'Email',
-      details: ['hariniandtharshinitraders@gmail.com', 'support@hariniandtharshinitraders.com'],
+      details: ['hariniandtharshinitraders@gmail.com', 'contact@hariniandtharshini.store'],
       action: 'mailto:hariniandtharshinitraders@gmail.com',
       actionText: 'Send Email'
     },
@@ -180,7 +180,7 @@ const Contact = () => {
                       value={formData.phone}
                       onChange={(e) => handleInputChange('phone', e.target.value)}
                       className="form-input"
-                      placeholder="+91 98765 43210"
+                      placeholder="+91 97893 42841"
                     />
                   </div>
                 </div>
@@ -266,12 +266,20 @@ const Contact = () => {
                     Get instant answers to your questions via WhatsApp. 
                     Available during business hours.
                   </p>
-                  <a href="https://wa.me/+919876543210">
-                    <Button className="bg-green hover:bg-green/90 text-white">
-                      <MessageCircle className="mr-2" size={18} />
-                      Chat on WhatsApp
-                    </Button>
-                  </a>
+                  <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                    <a href="https://wa.me/+919789342841">
+                      <Button className="bg-green hover:bg-green/90 text-white w-full sm:w-auto">
+                        <MessageCircle className="mr-2" size={18} />
+                        WhatsApp: +91 97893 42841
+                      </Button>
+                    </a>
+                    <a href="https://wa.me/+919790449439">
+                      <Button className="bg-green hover:bg-green/90 text-white w-full sm:w-auto">
+                        <MessageCircle className="mr-2" size={18} />
+                        WhatsApp: +91 97904 49439
+                      </Button>
+                    </a>
+                  </div>
                 </CardContent>
               </Card>
 
