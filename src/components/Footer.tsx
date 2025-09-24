@@ -75,14 +75,22 @@ const Footer = () => {
                   </a>
                 </div>
               </div>
-              <div className="flex items-center space-x-3">
-                <Mail size={16} className="text-white/80" />
-                <div className="text-white/90">
-                  <a href="mailto:hariniandtharshinitraders@gmail.com" className="hover:text-white transition-colors block">
-                    hariniandtharshinitraders@gmail.com
+              <div className="space-y-2">
+                <h4 className="font-semibold text-white text-sm mb-2">Email Us</h4>
+                <div className="space-y-1">
+                  <a 
+                    href="mailto:hariniandtharshinitraders@gmail.com" 
+                    className="flex items-center space-x-2 text-white/90 hover:text-white transition-colors text-sm bg-blue-500/20 hover:bg-blue-500/30 px-2 py-1 rounded"
+                  >
+                    <Mail size={14} />
+                    <span>hariniandtharshinitraders@gmail.com</span>
                   </a>
-                  <a href="mailto:contact@hariniandtharshini.store" className="hover:text-white transition-colors block">
-                    contact@hariniandtharshini.store
+                  <a 
+                    href="mailto:contact@hariniandtharshini.store" 
+                    className="flex items-center space-x-2 text-white/90 hover:text-white transition-colors text-sm bg-blue-500/20 hover:bg-blue-500/30 px-2 py-1 rounded"
+                  >
+                    <Mail size={14} />
+                    <span>contact@hariniandtharshini.store</span>
                   </a>
                 </div>
               </div>
