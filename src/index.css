@@ -1,0 +1,229 @@
+/* 
+  Tailwind CSS - This file uses Tailwind CSS directives
+  The @tailwind and @apply directives are processed by PostCSS with Tailwind CSS plugin
+  IDE warnings about "unknown at-rule" are expected and can be safely ignored
+*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Harini & Tharshini Traders Design System 
+Premium Edible Oils - Food-inspired, modern, accessible design
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Core Brand Colors */
+    --primary-gold: 43 68% 48%;      /* #C89D2D - Primary Gold for richness */
+    --accent-green: 122 52% 33%;     /* #2E7D32 - Accent Green for purity */
+    --secondary-brown: 26 47% 28%;   /* #6B4226 - Secondary Brown earthy */
+    --deep-red: 0 67% 42%;          /* #B71C1C - Deep Red for hover/urgent CTAs */
+    
+    /* Background System */
+    --cream-white: 50 50% 97%;      /* #FAF7F0 - Cream White background */
+    --off-white: 0 0% 99%;          /* #FDFDFD - Off-White background */
+    
+    /* Component Colors */
+    --background: var(--cream-white);
+    --foreground: 26 47% 20%;        /* Darker brown for text */
+    
+    --card: var(--off-white);
+    --card-foreground: var(--foreground);
+    
+    --popover: var(--off-white);
+    --popover-foreground: var(--foreground);
+    
+    --primary: var(--primary-gold);
+    --primary-foreground: var(--off-white);
+    
+    --secondary: var(--accent-green);
+    --secondary-foreground: var(--off-white);
+    
+    --muted: 50 30% 90%;
+    --muted-foreground: 26 30% 50%;
+    
+    --accent: var(--accent-green);
+    --accent-foreground: var(--off-white);
+    
+    --destructive: var(--deep-red);
+    --destructive-foreground: var(--off-white);
+    
+    --border: 50 20% 85%;
+    --input: var(--cream-white);
+    --ring: var(--primary-gold);
+    
+    /* Design Tokens */
+    --radius: 6px;  /* 6px radius for buttons/forms */
+    
+    /* Spacing Scale */
+    --spacing-xs: 12px;
+    --spacing-sm: 24px;
+    --spacing-md: 48px;
+    --spacing-lg: 64px;
+    
+    /* Gradients */
+    --gradient-gold: linear-gradient(135deg, hsl(var(--primary-gold)), hsl(43 75% 60%));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary-gold) / 0.9), hsl(var(--accent-green) / 0.9));
+    --gradient-cream: linear-gradient(180deg, hsl(var(--cream-white)), hsl(var(--off-white)));
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 12px hsl(var(--primary-gold) / 0.1);
+    --shadow-hover: 0 8px 24px hsl(var(--primary-gold) / 0.15);
+    --shadow-deep: 0 12px 32px hsl(var(--secondary-brown) / 0.2);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-quick: all 0.2s ease-out;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair font-bold;
+  }
+  
+  .font-labels {
+    @apply font-nunito;
+  }
+}
+
+@layer components {
+  /* Premium Button Variants */
+  .btn-hero {
+    @apply bg-primary text-primary-foreground hover:bg-destructive transition-colors duration-300 shadow-lg hover:shadow-xl;
+  }
+  
+  .btn-secondary-action {
+    @apply bg-secondary text-secondary-foreground hover:bg-secondary/90 transition-colors duration-300;
+  }
+  
+  /* Product Card Hover Effects */
+  .product-card {
+    @apply transition-all duration-300 hover:shadow-hover hover:-translate-y-1;
+  }
+  
+  /* Form Focus Styles */
+  .form-input {
+    @apply bg-input border-border focus:ring-2 focus:ring-accent focus:border-accent transition-all duration-200;
+  }
+  
+  /* Navigation Styles */
+  .nav-transparent {
+    @apply bg-transparent backdrop-blur-sm;
+  }
+  
+  .nav-solid {
+    @apply bg-primary shadow-soft;
+  }
+  
+  /* Gradient Backgrounds */
+  .gradient-gold {
+    background: var(--gradient-gold);
+  }
+  
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .gradient-cream {
+    background: var(--gradient-cream);
+  }
+  
+  /* Custom Shadows */
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .shadow-hover {
+    box-shadow: var(--shadow-hover);
+  }
+  
+  .shadow-deep {
+    box-shadow: var(--shadow-deep);
+  }
+  
+  /* Animation Classes */
+  .fade-in-up {
+    @apply animate-[fadeInUp_0.6s_ease-out_forwards];
+  }
+  
+  .stagger-children > * {
+    @apply opacity-0 translate-y-4;
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+  
+  .stagger-children > *:nth-child(1) { animation-delay: 0.1s; }
+  .stagger-children > *:nth-child(2) { animation-delay: 0.2s; }
+  .stagger-children > *:nth-child(3) { animation-delay: 0.3s; }
+  .stagger-children > *:nth-child(4) { animation-delay: 0.4s; }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
