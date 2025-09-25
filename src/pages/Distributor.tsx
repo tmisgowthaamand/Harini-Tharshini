@@ -111,7 +111,7 @@ const Distributor = () => {
     </div>
 
     <div class="section">
-        <div class="section-title">Why Choose Us?</div>
+        <div class="section-title">Why Choose Thiru Annamalaiyar?</div>
         <p>✓ FSSAI Certified Products<br>
         ✓ Woman-Owned MSME Enterprise<br>
         ✓ Traditional Extraction Methods<br>
